@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Matheus Azevedo Shzu Carvalho</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-500">
+  <header class="bg-gradient-to-r from-blue-700 to-purple-600 p-6 sticky top-0 shadow-lg">
+    <nav class="flex justify-between items-center max-w-5xl mx-auto">
+      <h1 class="text-2xl md:text-3xl font-bold text-white">Matheus Azevedo</h1>
+      <div class="flex items-center space-x-6">
+        <a href="#sobre" class="text-white hover:scale-105 transform transition duration-300">Sobre</a>
+        <a href="#projetos" class="text-white hover:scale-105 transform transition duration-300">Projetos</a>
+        <a href="#habilidades" class="text-white hover:scale-105 transform transition duration-300">Habilidades</a>
+        <a href="#contato" class="text-white hover:scale-105 transform transition duration-300">Contato</a>
+        <button id="theme-toggle" class="p-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-full hover:rotate-180 transition duration-500">🌙</button>
+      </div>
+    </nav>
+  </header>
+  <main class="max-w-5xl mx-auto p-6">
+    <section id="sobre" class="my-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-700 dark:text-blue-300">Sobre Mim</h2>
+      <p class="mt-4 text-lg leading-relaxed">Olá! Sou Matheus Azevedo Shzu Carvalho, desenvolvedor web apaixonado por criar soluções criativas e eficientes. Tenho experiência em desenvolver interfaces modernas com HTML, CSS, JavaScript e frameworks como Tailwind CSS.</p>
+    </section>
+    <section id="projetos" class="my-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-700 dark:text-blue-300">Projetos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100">Loja Virtual</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Um sistema de cadastro de produtos com dashboard interativo de vendas, desenvolvido com HTML, CSS e JavaScript.</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100">Projeto Futuro</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Em desenvolvimento, com foco em novas tecnologias.</p>
+        </div>
+      </div>
+    </section>
+    <section id="habilidades" class="my-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-700 dark:text-blue-300">Habilidades</h2>
+      <ul class="mt-4 text-lg list-disc list-inside">
+        <li>HTML, CSS, JavaScript</li>
+        <li>Frameworks: Tailwind CSS, React</li>
+        <li>Versionamento: Git, GitHub</li>
+        <li>Ferramentas: Replit, VS Code</li>
+      </ul>
+    </section>
+    <section id="contato" class="my-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-700 dark:text-blue-300">Contato</h2>
+      <p class="mt-4 text-lg">Email: <a href="mailto:matheus.shzu@example.com" class="underline hover:text-blue-600 dark:hover:text-blue-400 transition-colors">matheus.shzu@example.com</a></p>
+      <p class="mt-2 text-lg">GitHub: <a href="https://github.com/shzu2453" class="underline hover:text-blue-600 dark:hover:text-blue-400 transition-colors">github.com/shzu2453</a></p>
+    </section>
+  </main>
+  <footer class="bg-gray-200 dark:bg-gray-900 p-4 text-center">
+    <p class="text-gray-600 dark:text-gray-400">© 2025 Matheus Azevedo Shzu Carvalho. Todos os direitos reservados.</p>
+  </footer>
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggleButton.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+      toggleButton.classList.toggle('rotate-180');
+    });
+  </script>
+</body>
+</html>
